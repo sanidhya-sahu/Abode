@@ -34,7 +34,7 @@ const Header = () => {
             </div>
             <FiUser className={styles.icon} />
             <FiHeart className={styles.icon} />
-            <div className={styles.cartIcon}>
+            <div onClick={()=>{navigate('/cart')}} className={styles.cartIcon}>
               <FiShoppingCart className={styles.icon} />
               <span className={styles.cartBadge}>0</span>
             </div>

@@ -6,9 +6,10 @@ import FeaturedProducts from './components/FeaturedProducts';
 import Footer from './components/Footer';
 import Login from './components/login';
 import Register from './components/register';
+import Cart from './components/Cart';
 import { AuthProvider } from './AuthContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import ProtectedRoute from './ProtectedRoute';
 function App() {
   return (
     <AuthProvider>
@@ -16,6 +17,11 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/cart" element={
+            <ProtectedRoute>
+              <Cart />
+            </ProtectedRoute>
+          } />
           <Route path="/" element={
             <div>
               <NotificationBar />

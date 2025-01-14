@@ -1,9 +1,17 @@
-import { createContext, useState, useContext } from 'react';
+import { createContext, useState, useContext, useEffect } from 'react';
+import Cookies from 'js-cookie';
 
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser ] = useState(null);
+
+  useEffect(() => {
+    const userCookie = Cookies.get('user');
+    if (userCookie) {
+      setUser (JSON.parse(userCookie));
+    }
+  }, []);
 
   const login = async (email, password) => {
     try {
@@ -21,7 +29,8 @@ export const AuthProvider = ({ children }) => {
       }
       
       const userData = await res.json();
-      setUser(userData);
+      setUser (userData);
+      Cookies.set('user', JSON.stringify(userData._id), { expires: 7 });
       return userData;
     } catch (error) {
       throw error;
@@ -43,20 +52,28 @@ export const AuthProvider = ({ children }) => {
         throw new Error(error.message);
       }
 
-      const newUser = await res.json();
-      setUser(newUser);
-      return newUser;
+      const newUser  = await res.json();
+      setUser (newUser );
+      Cookies.set('user', JSON.stringify(newUser ), { expires: 7 });
+      return newUser ;
     } catch (error) {
       throw error;
     }
   };
 
   const logout = () => {
-    setUser(null);
+    setUser (null);
+    Cookies.remove('user');
   };
 
+  const isAuth = () =>{
+    const token = Cookies.get('user');
+    if (!token) return false;
+    else return true
+  }
+
   return (
-    <AuthContext.Provider value={{ user, login, register, logout }}>
+    <AuthContext.Provider value={{ user, login, register, logout, isAuth }}>
       {children}
     </AuthContext.Provider>
   );
