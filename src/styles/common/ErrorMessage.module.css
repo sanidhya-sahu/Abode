@@ -1,0 +1,13 @@
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #E17055;
+  background-color: #FEEBC8;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.error p {
+  margin: 0;
+  font-size: 1.1rem;
+}

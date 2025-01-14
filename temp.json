@@ -1,0 +1,68 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "name": "Glass Table Lamp",
+        "mrp": 199.00,
+        "price": 149.00,
+        "imageUrl": "https://ik.imagekit.io/sani/WhatsApp%20Image%202024-12-28%20at%2018.36.16_7187ed34.jpg?updatedAt=1735884737684"
+      },
+      {
+        "id": "2",
+        "name": "Glass Table Lamp",
+        "mrp": 199.00,
+        "price": 149.00,
+        "imageUrl": "https://ik.imagekit.io/sani/WhatsApp%20Image%202025-01-03%20at%2011.33.49_42681136.jpg?updatedAt=1735884674595"
+      },
+      {
+        "id": "3",
+        "name": "Glass Table Lamp",
+        "mrp": 199.00,
+        "price": 149.00,
+        "imageUrl": "https://ik.imagekit.io/sani/WhatsApp%20Image%202025-01-03%20at%2011.33.49_755cf129.jpg?updatedAt=1735884674591"
+      },
+      {
+        "id": "4",
+        "name": "Glass Table Lamp",
+        "mrp": 199.00,
+        "price": 149.00,
+        "imageUrl": "https://ik.imagekit.io/sani/WhatsApp%20Image%202025-01-03%20at%2011.33.49_4c155c1e.jpg?updatedAt=1735884674569"
+      },
+      {
+        "id": "5",
+        "name": "Glass Table Lamp",
+        "mrp": 199.00,
+        "price": 149.00,
+        "imageUrl": "https://ik.imagekit.io/sani/WhatsApp%20Image%202025-01-03%20at%2011.33.49_4ffdd3ed.jpg?updatedAt=1735884674566"
+      },
+      {
+        "id": "6",
+        "name": "Glass Table Lamp",
+        "mrp": 199.00,
+        "price": 149.00,
+        "imageUrl": "https://ik.imagekit.io/sani/WhatsApp%20Image%202025-01-03%20at%2011.33.49_1f19a175.jpg?updatedAt=1735884674684"
+      },
+      {
+        "id": "7",
+        "name": "Glass Table Lamp",
+        "mrp": 199.00,
+        "price": 149.00,
+        "imageUrl": "https://ik.imagekit.io/sani/WhatsApp%20Image%202025-01-03%20at%2011.33.49_17feb272.jpg?updatedAt=1735884674587"
+      },
+      {
+        "id": "8",
+        "name": "Glass Table Lamp",
+        "mrp": 199.00,
+        "price": 149.00,
+        "imageUrl": "https://ik.imagekit.io/sani/WhatsApp%20Image%202025-01-03%20at%2011.33.49_bfe9a9c0.jpg?updatedAt=1735884674689"
+      },
+      {
+        "id": "9",
+        "name": "Glass Table Lamp",
+        "mrp": 199.00,
+        "price": 149.00,
+        "imageUrl": "https://ik.imagekit.io/sani/WhatsApp%20Image%202025-01-03%20at%2011.33.49_a4e9127a.jpg?updatedAt=1735884674503"
+      }
+    ]
+  }
+  

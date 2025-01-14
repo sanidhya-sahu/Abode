@@ -1,0 +1,31 @@
+.brands {
+  padding: 3rem 0;
+  background-color: #F9FAFB;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.brandList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.brandImage {
+  height: 2.5rem;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.6);
+  transition: all 0.3s ease;
+}
+
+.brandImage:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.05);
+}
